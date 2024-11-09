@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.header {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.inputSection h2 {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.inputSection form div {
+  margin: 8px 0;
+}
+
+.inputSection form button {
+  background-color: cornflowerblue;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.inputSection form button span {
+  font-weight: bold;
+}
+
+.inputSection form div input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.inputSection form div label {
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+.searchSection {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid black; /* Pastikan border di sini */
+  border-radius: 10px;
+}
+
+.searchSection h2 {
+  color: cornflowerblue;
+}
+
+.searchSection form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* Semua elemen berada dalam satu kolom */
+  grid-gap: 10px;
+}
+
+.searchSection form label {
+  display: flex;
+  align-items: center;
+}
+
+.searchSection form input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black; /* Border untuk input */
+}
+
+.searchSection form button {
+  background-color: cornflowerblue;
+  color: white;
+  border: 1px solid black; /* Border untuk tombol */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bookShelf {
+  margin: 16px 0 0 0;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.bookShelf h2 {
+  color: cornflowerblue;
+}
+
+/* Styling dasar untuk elemen rak buku */
+.book_item {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Styling ketika buku sudah selesai dibaca */
+.book_item.complete {
+  background-color: #d4edda; /* Warna hijau muda untuk buku selesai */
+  border-color: #28a745; /* Warna border hijau */
+}
+
+/* Styling ketika buku belum selesai dibaca */
+.book_item.incomplete {
+  background-color: #f8d7da; /* Warna merah muda untuk buku belum selesai */
+  border-color: #dc3545; /* Warna border merah */
+}
+
+/* Tombol aksi */
+button {
+  margin-right: 10px;
+  margin-bottom: 2px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol selesai dibaca */
+button.complete {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Tombol hapus buku */
+button.delete {
+  background-color: #dc3545;
+  color: white;
+}
